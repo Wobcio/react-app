@@ -1,0 +1,19 @@
+.columnForm {
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+}
+
+.title {
+   margin: 0 10px;
+}
+
+.inputWrapper {
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .columnForm {
+      flex-direction: column;
+    }
+  }
