@@ -22,7 +22,7 @@ const List = () => {
         {columns.map(column => <Column key={column.id} {...column} />)}
       </section>
 
-      <ColumnForm  />
+      <ColumnForm />
 
     </div>
   );
