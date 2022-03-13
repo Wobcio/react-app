@@ -1,8 +1,9 @@
 import style from './Container.module.scss'
+import clsx from 'clsx';
 
 const Container = props => {
     return (
-        <div className={style.container}>{props.children}</div>
+        <div className={clsx(style.container, props.className)}>{props.children}</div>
     );
 };
 

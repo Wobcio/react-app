@@ -1,0 +1,52 @@
+@import '../../styles/settings.scss';
+
+
+.navbar {
+    width: 100%;
+    background-color: darken($color-dark, 3%);
+    font-size: 24px;
+    line-height: 24px;
+    font-family: $font-text;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    a {
+        text-decoration: none;
+        color: $color-light;
+    }
+
+    a:active {
+        color: darken($color-light, 50%);
+    }
+
+    a:hover {
+        color: darken($color-light, 50%);
+  
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container {
+    margin-top: 0;
+    padding : 20px 0;
+}
+
+.links {
+    font-size: 16px;
+    font-weight: 600;
+    
+
+    a {
+        margin-right: 10px;
+    }
+
+    a:last-child {
+        margin-right: 0;
+    }
+}
