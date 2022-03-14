@@ -10,8 +10,6 @@ const ColumnForm = ({listId}) => {
 
     const dispatch = useDispatch();
 
-    //const listId = props.listId;
-
     const [title, setTitle] = useState('')
     const [icon, setIcon] = useState('')
 

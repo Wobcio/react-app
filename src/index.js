@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import './styles/normalize.scss';
 import './styles/global.scss';
-import 'font-awesome/css/font-awesome.min.css';
+import 'font-awesome/css/font-awesome.css';
 
 ReactDOM.render(
   <React.StrictMode>

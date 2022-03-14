@@ -1,8 +1,7 @@
 import Column from '../Column/Column';
 import ColumnForm from '../ColumnForm/ColumnForm';
 import { useSelector } from 'react-redux';
-import { getAllColumns,
-         getListById,
+import { getListById,
          getColumnByList } from '../../redux/store';
 import { useParams } from 'react-router';
 import { Navigate } from 'react-router-dom';
