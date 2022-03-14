@@ -1,4 +1,5 @@
 import Container from "../Container/Container";
+import { Link, NavLink } from 'react-router-dom';
 
 import styles from "./NavBar.module.scss";
 
@@ -8,14 +9,13 @@ const NavBar = () => {
         <div className={styles.navbar}>
             <Container className={styles.container}>
                 <div className={styles.flex}>
-                    <a href="/"><i class="fa fa-tasks"></i></a>
+                    <Link to="/"><i className="fa fa-tasks"></i></Link>
                     <div className={styles.links}>
-                        <a href="/">Home</a>
-                        <a href="/favorite">Favorite</a>
-                        <a href="/about">About</a>
+                        <NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined}to="/">Home</NavLink>
+                        <NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined}to="/favorite">Favorite</NavLink>
+                        <NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined}to="/about">About</NavLink>
                     </div>
-                </div>
-                
+                </div>   
             </Container>
         </div>
     )

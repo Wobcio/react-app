@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { updateSearching } from '../../redux/store.js';
 import Button from '../Button/Button.js';
@@ -10,12 +10,20 @@ const SearchForm = () => {
 
     const dispatch = useDispatch();
 
+    useEffect(
+        () => {
+            dispatch(updateSearching(''))
+        }, [],
+    );
+
     const [phrase, setPhrase] = useState('')
 
     const handleSubmit = e => {
         e.preventDefault();
         dispatch(updateSearching(`${phrase}`))
     }
+
+
 
     return (
         <form className={styles.searchForm} onSubmit={handleSubmit}>

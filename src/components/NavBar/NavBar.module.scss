@@ -14,15 +14,7 @@
     a {
         text-decoration: none;
         color: $color-light;
-    }
-
-    a:active {
-        color: darken($color-light, 50%);
-    }
-
-    a:hover {
-        color: darken($color-light, 50%);
-  
+        transition: 0.5s;
     }
 }
 
@@ -49,4 +41,13 @@
     a:last-child {
         margin-right: 0;
     }
+
+    a:hover {
+        color: $color-warning;
+    }
+
+    .linkActive {
+        color: $color-warning;
+    }
 }
+
