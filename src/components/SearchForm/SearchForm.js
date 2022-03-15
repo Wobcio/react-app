@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { updateSearching } from '../../redux/store.js';
+import { updateSearching } from '../../redux/searchStringRedux';
 import Button from '../Button/Button.js';
 import TextInput from '../TextInput/TextInput';
 
@@ -12,7 +12,7 @@ const SearchForm = () => {
 
     useEffect(
         () => {
-            dispatch(updateSearching(''))
+            dispatch(updateSearching(''));
         }, [],
     );
 

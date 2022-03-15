@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { getFavCards } from "../../redux/store";
+import { getFavCards } from "../../redux/cardsRedux";
 import Card from "../Card/Card";
 import Container from "../Container/Container";
 import PageTitle from "../PageTitle/PageTitle";

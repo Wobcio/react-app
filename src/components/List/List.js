@@ -1,15 +1,13 @@
 import Column from '../Column/Column';
 import ColumnForm from '../ColumnForm/ColumnForm';
 import { useSelector } from 'react-redux';
-import { getListById,
-         getColumnByList } from '../../redux/store';
+import { getListById } from '../../redux/listsRedux';
+import { getColumnByList } from '../../redux/columnsRedux';
 import { useParams } from 'react-router';
 import { Navigate } from 'react-router-dom';
-
-
+import SearchForm from '../SearchForm/SearchForm';
 
 import styles from './List.module.scss';
-import SearchForm from '../SearchForm/SearchForm';
 
 const List = () => {
 
